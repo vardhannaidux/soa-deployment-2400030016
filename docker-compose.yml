@@ -23,7 +23,7 @@ services:
       - microservices-network
 
   eureka-server:
-    image: suryakiran1993/eureka-server:latest
+    image: jayanavardhannaidu/eureka-server:latest
     build:
       context: ./EurekaServer
       dockerfile: Dockerfile
@@ -35,7 +35,7 @@ services:
       - microservices-network
 
   api-gateway:
-    image: suryakiran1993/api-gateway:latest
+    image: jayanavardhannaidu/api-gateway:latest
     build:
       context: ./APIGateway
       dockerfile: Dockerfile
@@ -52,7 +52,7 @@ services:
       - microservices-network
 
   user-service:
-    image: suryakiran1993/user-service:latest
+    image: jayanavardhannaidu/user-service:latest
     build:
       context: ./UserService
       dockerfile: Dockerfile
@@ -69,7 +69,7 @@ services:
       - microservices-network
 
   product-service:
-    image: suryakiran1993/product-service:latest
+    image: jayanavardhannaidu/product-service:latest
     build:
       context: ./ProductService
       dockerfile: Dockerfile
@@ -86,7 +86,7 @@ services:
       - microservices-network
 
   order-service:
-    image: suryakiran1993/order-service:latest
+    image: jayanavardhannaidu/order-service:latest
     build:
       context: ./OrderService
       dockerfile: Dockerfile
